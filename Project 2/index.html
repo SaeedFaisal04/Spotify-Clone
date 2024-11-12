@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilty.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div>
+                <img class="invert close" src="assets/close.svg" alt="">
+            </div>
+
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="110" class="invert" src="assets/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="assets/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="assets/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="assets/playlist.svg" alt="">
+                    <h4>Your library</h4>
+                </div>
+                <div class="song-list flex ">
+                    <ul>
+                        <!-- Add your song list items here -->
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <img src="assets/" alt="">
+                    <div class="hamburgerContainer">
+                        <img class="invert hamburger" src="assets/hamburger.svg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylist">
+                <h3>Spotify Playlist</h3>
+                <div class="cardcontainer">
+                    <div class="cards">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <circle cx="12" cy="12" r="12" fill="#1fdf64" />
+                                <polygon points="9,7 9,17 17,12" fill="000000" />
+                            </svg>
+                        </div>
+                        <img src="assets/cover.jpg" alt="">
+                        <h3>Happy Hits!</h3>
+                        <p>Hits to boost your mood and fill you with...</p>
+                    </div>
+                    <!-- Add more playlist cards here -->
+                </div>
+            </div>
+
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="main-info">
+                    <div class="songinfo"></div>
+                    <div class="playbuttons">
+                        <img id="Play" src="assets/play.svg" alt="">
+                    </div>
+
+                    <div class="songtime">
+                    </div>
+                    <div class="volumebar">
+                        <span>
+                            <img class="volimg" src="assets/volume.svg" alt="Volume Icon">
+                        </span> 
+                        <input type="range" name="volume" id="volumeRange" min="0" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
